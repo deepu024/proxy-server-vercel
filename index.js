@@ -5,7 +5,7 @@ const { config } = require('dotenv');
 config();
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 const BUCKET_URL = process.env.BUCKER_URL;
 
